@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainWindow.xaml](./CS/WpfApplication14/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/WpfApplication14/MainWindow.xaml.vb))
+* [MainWindow.xaml.cs](./CS/WpfApplication14/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/WpfApplication14/MainWindow.xaml.vb))
+<!-- default file list end -->
 # How to show a custom Context/Popup Menu for certain chart elements
 
 
