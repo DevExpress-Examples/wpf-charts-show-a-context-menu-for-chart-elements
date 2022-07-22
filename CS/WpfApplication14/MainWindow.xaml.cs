@@ -43,7 +43,7 @@ namespace WpfApplication14
 
 
         private void PopupMenu_Opening(object sender, System.ComponentModel.CancelEventArgs e) {
-            var hitInfo = chartControl1.CalcHitInfo(Mouse.GetPosition(Application.Current.MainWindow));
+            var hitInfo = chartControl1.CalcHitInfo(Mouse.GetPosition(this.chartControl1));
             if (!hitInfo.InSeries) {
                 e.Cancel = true;
             }
