@@ -15,7 +15,7 @@ Use the [BarManager.DXContextMenu](https://docs.devexpress.com/WPF/DevExpress.Xp
 ```xaml
 xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
 xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts"
-<!--...--s>
+<!--...-->
     <dxc:ChartControl x:Name="chartControl1" >  
         <dxb:BarManager.DXContextMenu>  
             <dxb:PopupMenu Opening="PopupMenu_Opening"  >  
@@ -29,7 +29,7 @@ xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts"
     </dxc:ChartControl>  
 ```
 
-In the popup menu's [Opening](https://docs.devexpress.com/WPF/DevExpress.Xpf.Bars.BarPopupBase.Opening) event handler, call the [ChartControl.CalcHitInfo](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.ChartControl.CalcHitInfo(System.Windows.Point)) method to obtain information about the clicked item. If the clicked item is not a series, set the [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-6.0#System_ComponentModel_CancelEventArgs_Cancel) property to `true`. Otherwise, save information about the target element to the menu's [Tag](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.tag?view=windowsdesktop-6.0) property:
+In the popup menu's [Opening](https://docs.devexpress.com/WPF/DevExpress.Xpf.Bars.BarPopupBase.Opening) event handler, call the [ChartControl.CalcHitInfo](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.ChartControl.CalcHitInfo(System.Windows.Point)) method to obtain information about clicked items. If the clicked item is not a series, set the [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-6.0#System_ComponentModel_CancelEventArgs_Cancel) property to `true`. Otherwise, save information about the target element to the menu's [Tag](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.tag?view=windowsdesktop-6.0) property:
 
 ```cs
 private void PopupMenu_Opening(object sender, System.ComponentModel.CancelEventArgs e) {
