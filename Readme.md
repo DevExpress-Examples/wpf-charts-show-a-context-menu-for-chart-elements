@@ -28,7 +28,7 @@ xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts"
     </dxc:ChartControl>  
 ```
 
-In the popup menu's [Opening](https://docs.devexpress.com/WPF/DevExpress.Xpf.Bars.BarPopupBase.Opening) event handler, call the [ChartControl.CalcHitInfo](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.ChartControl.CalcHitInfo(System.Windows.Point)) method to obtain information about clicked items. If the clicked item is not a series, set the [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-6.0#System_ComponentModel_CancelEventArgs_Cancel) property to `true`. Otherwise, save information about the target element to the menu's [Tag](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.tag?view=windowsdesktop-6.0) property:
+In the pop-up menu's [Opening](https://docs.devexpress.com/WPF/DevExpress.Xpf.Bars.BarPopupBase.Opening) event handler, call the [ChartControl.CalcHitInfo](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.ChartControl.CalcHitInfo(System.Windows.Point)) method to obtain information about clicked items. If the clicked item is not a series, set the [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-6.0#System_ComponentModel_CancelEventArgs_Cancel) property to `true`. Otherwise, save information about the target element to the menu's [Tag](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.tag?view=windowsdesktop-6.0) property:
 
 ```cs
 private void PopupMenu_Opening(object sender, System.ComponentModel.CancelEventArgs e) {
@@ -55,5 +55,5 @@ private void PopupMenu_Opening(object sender, System.ComponentModel.CancelEventA
 
 ## More Examples
 
-* [How to determine which chart element is hovered by the mouse pointer](https://github.com/DevExpress-Examples/how-to-determine-which-chart-element-is-hovered-by-the-mouse-pointer-e4511)
-* [How to display custom tooltips over the data point currently hovered by the mouse pointer](https://github.com/DevExpress-Examples/how-to-display-custom-tooltips-over-the-data-point-currently-hovered-by-the-mouse-pointer-e1376)
+* [How to determine which chart element is under the mouse pointer](https://github.com/DevExpress-Examples/how-to-determine-which-chart-element-is-hovered-by-the-mouse-pointer-e4511)
+* [How to display custom tooltips over the data point under the mouse pointer](https://github.com/DevExpress-Examples/how-to-display-custom-tooltips-over-the-data-point-currently-hovered-by-the-mouse-pointer-e1376)
